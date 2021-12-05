@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Project</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: rgb(113, 238, 175);
+        }
+        #play-area{
+            width: 100%;
+            height: 25vh;
+            background-color: #0c1445;
+            overflow: hidden;
+            animation-name:sky;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        #ball{
+            width: 10%;
+            height: 80%;
+            background-color: yellow;
+            border-radius: 100%;
+            position: relative;
+            animation-name:sun;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes sun{
+            0%{
+                left:-5%;
+                top: 90%;
+                background-image: linear-gradient(to top,#F47421,#FFC120);
+            }
+            10%{
+                left:5%;
+                top: 70%;
+                background-image: linear-gradient(to top,#ffb700,yellow);
+            }
+            20%{
+                left:15%;
+                top: 50%;
+                background-image: linear-gradient(to top,#ffb700,yellow);
+            }
+            30%{
+                left:25%;
+                top: 30%;
+                background-image: linear-gradient(to top,yellow,rgb(252, 252, 13));
+            }
+            40%{
+                left:35%;
+                top: 10%;
+                background-image: linear-gradient(to top,yellow,rgb(252, 252, 13));
+            }
+            50%{
+                left:45%;
+                top: 5%;
+                background-image: linear-gradient(to top,yellow,rgb(252, 252, 13));
+            }
+            60%{
+                left:55%;
+                top: 10%;
+                background-image: linear-gradient(to top,yellow,rgb(252, 252, 13));
+            }
+            70%{
+                left:65%;
+                top: 30%;
+                background-image: linear-gradient(to top,yellow,rgb(252, 252, 13));
+            }
+            80%{
+                left:75%;
+                top: 50%;
+                background-image: linear-gradient(to top,#ffb700,yellow);
+            }
+            90%{
+                left:85%;
+                top: 70%;
+                background-image: linear-gradient(to top,#ffb700,yellow);
+            }
+            100%{
+                left: 95%;
+                top: 90%;
+                background-image: linear-gradient(to top,#F47421,#FFC120);
+            }
+        }
+
+        @keyframes sky{
+            0%{
+                background-image: linear-gradient(to top,#F47421,#FFC120);
+            }
+            5%{
+                background-image: linear-gradient(to top,#F47421,#FFC120);
+            }
+            10%{
+                background-image: linear-gradient(to top,#F47421,#FFC120,#FFC120);
+            }
+            15%{
+                background-image: linear-gradient(to top,#F47421,#FFC120,#FFC120);
+            }
+            20%{
+                background-image: linear-gradient(to top,#F47421,#FFC120,#FFC120);
+            }
+            25%{
+                background-image: linear-gradient(to top,#F47421,#FFC120,#FFC120);
+            }
+            30%{
+                background-image: linear-gradient(to top,#FFC120,#79B9E7,#79B9E7);
+            }
+            35%{
+                background-image: linear-gradient(to top,#FFC120,#79B9E7,#79B9E7);
+            }
+            40%{
+                background-image: linear-gradient(to top,#79B9E7,#79B9E7,#007DC6);
+            }
+            45%{
+                background-image: linear-gradient(to top,#79B9E7,#79B9E7,#007DC6);
+            }
+            50%{
+                background-image: linear-gradient(to top,#79B9E7,#79B9E7,#007DC6);
+            }
+            55%{
+                background-image: linear-gradient(to top,#79B9E7,#79B9E7,#007DC6);
+            }
+            60%{
+                background-image: linear-gradient(to top,#007DC6,#007DC6,#007DC6);
+            }
+            65%{                
+                background-image: linear-gradient(to top,#007DC6,#007DC6,#007DC6);
+            }
+            70%{
+                background-image: linear-gradient(to bottom,#0c1445,#007DC6,#007DC6);
+            }
+            75%{
+                background-image: linear-gradient(to bottom,#0c1445,#007DC6,#007DC6);
+            }
+            80%{
+                background-image: linear-gradient(to bottom,#0c1445,#007DC6,#007DC6);
+            }
+            85%{
+                background-image: linear-gradient(to bottom,#0c1445,#007DC6,#007DC6);
+            }
+            90%{
+                background-image: linear-gradient(to bottom,#0c1445,#0c1445,#007DC6);
+            }
+            95%{
+                background-color:#0c1445;
+            }
+            100%{
+                background-color: #0c1445;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="play-area">
+        <div id="ball"><div>
+    </div>
+</body>
+</html>
